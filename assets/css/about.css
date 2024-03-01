@@ -108,6 +108,9 @@
 }
 
 @media (max-width: 992px) {
+    #about {
+        height: 100%;
+    }
     #about .container .title {
         font-size: 45px;
     }
