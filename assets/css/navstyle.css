@@ -133,7 +133,7 @@ header {
         font-size: 15px;
     }
     .dropDownMenu.open {
-        height: 170px;
+        height: 250px;
     }
 }
 @media (max-width: 576px) {
