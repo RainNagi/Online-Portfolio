@@ -1,0 +1,202 @@
+
+@keyframes scale {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+
+    100% {
+        transform: scale(1.2); /* Return to original scale */
+    }
+}
+
+#skills {
+    height: 115vh;
+    width: 100%;
+    background-image: url(../images/EB_Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+}
+.skills_title{
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.skillscontent {
+    margin: 20px 10px 0 0 ;
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.skills_LeftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border-right: 1px solid white;
+}
+.skills_RightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    border-left: 1px solid white;
+}
+.contentTitle {
+    font-size: 20px;
+    text-align: center;
+}
+.leftside_content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+.logo_container{
+    word-spacing: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 30px;
+}
+
+.progress_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.progressbar {
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.progress{
+    background-color: #58a0ff;
+    border-radius: 10px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.progresstext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: bold;
+}
+.python {
+    width: 74%;
+    ;
+}
+.java {
+    width: 58%;
+}
+.html {
+    width: 72%;
+}
+.js {
+    width: 56%;
+}
+.css {
+    width: 63%;
+}
+.logo_container i{
+    transition: transform 0.5s ease;
+}
+.logo_container i:hover{
+    animation: scale 1.2s ease-in-out;
+}
+.progress_container .progressbar:hover{
+    animation: scale 1.2s;
+}
+.rightside_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+.myskills {
+    width: 90%;
+}
+.myskills h1{
+    font-size: 20px;
+}
+
+@media (max-width: 992px) { 
+    #skills{
+        height: 180vh;
+    }
+    .skills_title{
+        padding-top: 50px;
+    }
+    .skillscontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills_LeftSide {
+        width: 90%;
+    }
+    .skills_RightSide {
+        width: 90%;
+    }
+}
+@media (max-width: 576px) { 
+    .skills_title {
+        font-size: 17px;
+    }
+    .contentTitle{
+        font-size: 15px;
+    }
+    .logo_container{
+        font-size: 13px;
+    }
+    .progressbar{
+        height: 24px;
+    }
+    .progresstext{
+        font-size: 13px;
+    }
+    .myskills h1{
+        font-size: 13px;
+    }
+    .myskills p{
+        font-size:11px;
+    }
+
+}
+
+
+

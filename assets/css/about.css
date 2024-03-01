@@ -1,0 +1,153 @@
+@import url("styles.css");
+
+#about {
+    height: 100hv;
+    background-image: url(../images/aboutBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+}
+
+#about .container .title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 64px;
+    margin: 50px 0 0 0;
+}
+
+#about .container .about_content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about_leftSide {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about_leftSide img {
+    width: 400px;
+    background-color: gray;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about_rightSide {
+    background-color: #051235b2;
+    width: 65%;
+    height: 100%;
+    margin-left: 50px;
+    padding: 0 45px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    color: whitesmoke;
+}
+
+.about_rightSide .about_name {
+    font-family: monospace;
+    font-size: 40px;
+    margin: 15px 0 0 0 ;
+}
+.about_rightSide .about_name span{
+    text-shadow: 1px 2px black;
+    color: #3258C1;
+}
+
+.about_rightSide .about_intro {
+    font-family: monospace;
+    font-size: 2.80px;
+    margin-bottom: 32px;
+}
+
+
+.about_rightSide .content {
+    text-indent: 40px;
+    margin-top: 30px;
+    font-family: monospace;
+    font-size: 19px;
+    text-align: justify;
+}
+
+
+
+@media (max-width: 1075px) {
+    .about_leftSide img {
+        width: 305px;
+        height: auto;
+    }
+    #about .container .about_content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .about_leftSide, .about_rightSide {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about_rightSide {
+        padding: 0 2rem 3rem 2rem;
+        margin: 0 200px 0 0;
+    }
+
+}
+
+@media (max-width: 992px) {
+    #about .container .title {
+        font-size: 45px;
+    }
+
+    .about_rightSide .about_name {
+        font-size: 30px;
+    }
+    .about_rightSide .content {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+    
+    #about .container .about_content {
+        flex-direction: column;
+        gap: 14px;
+    }
+    #about .container .title {
+        font-size: 20px;
+    }
+    .about_leftSide img {
+        width: 135px;
+        height: auto;
+        
+    }
+    .about_rightSide .about_name {
+        font-size: 13px;
+    }
+    .about_rightSide .content {
+        margin-top: 9px;
+        font-size: 9px;
+    }
+    .about_rightSide {
+        padding: 0 2rem 3rem 2rem;
+        margin: 0 10px 0 0;
+    }
+}

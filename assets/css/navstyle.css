@@ -1,0 +1,168 @@
+header {  
+    position: fixed;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    top: 2%;
+    background-color: rgba(9, 27, 45, 1);
+    border-radius: 40px;
+    width: 90%;
+    padding: 0 2rem;
+    z-index: 5;
+}
+.navigationBar {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+.logo a span{
+    color: #3258C1;
+}
+
+.sectionsbnts {
+    color: #3258C1;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+
+}
+.sectionsbnts a{
+    font-size: 22px;
+    transition: 1s;
+}
+.sectionsbnts a:hover{
+    color: #2b5ee9;
+    font-size: 25px;
+    
+
+}
+.burgerbtn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.burgerbtn:hover {
+    color: #3258C1;
+}
+
+
+/* DROPDOWN MENU */
+
+.dropDownMenu {
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    width: 250px;
+    height: 0;
+    background: rgba(31, 28, 70, 0.452);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+
+.dropDownMenu.open {
+    height: 320px;
+}
+
+.dropDownMenu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropDownMenu a:hover {
+    color: #2b5ee9;
+    font-size: 30px;
+}
+
+/* RESPONSIVENESS STYLE */
+
+@media (max-width: 1115px) {
+    .sectionsbnts {
+        display: none;
+    }
+
+    .burgerbtn {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) { 
+    .logo img{
+        width: 50px;
+        height: auto;
+    
+    }
+    .logo a{
+        font-size: 30px;
+    }
+    .burgerbtn{
+        font-size: 1.5rem;
+    }
+    .navigationBar {
+        height: 50px;
+    }
+    .dropDownMenu {
+        right: 2rem;
+        top: 50px;
+        width: 150px;
+        height: 0;
+
+    }
+    .dropDownMenu ul li a{
+        font-size: 15px;
+    }
+    .dropDownMenu.open {
+        height: 170px;
+    }
+}
+@media (max-width: 576px) {
+    .logo img{
+        width: 25px;
+        height: auto;
+    
+    }
+    .logo a{
+        font-size: 20px;
+    }
+    .burgerbtn{
+        font-size: 1.0rem;
+    }
+    .navigationBar {
+        height: 50px;
+    }
+    .dropDownMenu {
+        right: 2rem;
+        top: 50px;
+        width: 150px;
+        height: 0;
+
+    }
+    .dropDownMenu ul li a{
+        font-size: 15px;
+    }
+    .dropDownMenu.open {
+        height: 170px;
+    }
+    
+}

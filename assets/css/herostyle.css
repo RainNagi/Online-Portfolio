@@ -1,0 +1,183 @@
+@import url('https://fonts.cdnfonts.com/css/caramelia');
+
+#hero {
+    height: 105vh;
+    background-image: url(../images/heroBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#hero .container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+#hero .leftSide{
+    margin: 80px 0 0 0;
+}
+
+
+#hero .container .leftSide {
+    width: 55%;
+}
+
+#hero .container .rightSide {
+    width: 30%;
+}
+
+.leftSide h1{
+    font-family: monospace;
+    font-size: 2rem;
+    
+}
+
+.leftSide .myName {
+    font-family:'Caramelia', sans-serif;
+    font-size: 4rem;
+    margin-top: 0px;
+}
+
+.leftSide .intro {
+    font-family: monospace;
+    font-size: 2rem;
+    margin-top: 0px;
+}
+.leftSide span{
+    font-family: monospace;
+    color:#3258C1;
+}
+
+.leftSide .content {
+    font-family: monospace;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.leftSide .socials{
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+.leftSide .socials a{
+    font-size: 40px;
+}
+.leftSide .socials a:hover{
+    color: #3258C1;
+}
+
+.leftSide .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.leftSide .button #resumebtn {
+    border: 2px solid rgb(34, 18, 104);
+    background-color: #35068d;
+    padding: 18px 55px;
+    border-radius: 100px;
+    color: white;
+    font-family: 'Caramelia', sans-serif;
+    font-size: 1.5rem;
+}
+
+.leftSide .button #resumebtn:hover {
+    background-color: rgb(14, 14, 231);
+    color: black;
+}
+
+
+/********** RESPONSIVENESS STYLE *************/
+
+@media (max-width: 1075px) {
+    #hero {
+        height: 100%;
+    }
+    #hero .container .rightSide {
+        width: 35%;
+    }
+
+    .leftSide h1 {
+        margin-top: 60px;
+        font-size: 1.8rem;
+    }
+
+    .leftSide .myName {
+        font-size: 3rem;
+    }
+
+    .leftSide .intro {
+        font-size: 1.8rem;
+    }
+
+    .leftSide .content {
+        font-size: 1rem;
+    }
+    .leftSide .socials a{
+        font-size: 30px;
+    }
+    .leftSide .buttons #resumebtn {
+        padding: 10px 30px;
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width: 992px) { 
+    #hero .container .leftSide {
+        width: 100%;
+        padding: 3rem;
+    }
+    .leftSide h1 {
+        margin-top: 10px;
+        font-size: 1.8rem;
+    }
+
+    #hero .container .rightSide {
+       display: none;
+    }
+
+    
+}
+
+
+@media (max-width: 576px) { 
+    #hero .container .leftSide {
+        margin-top: 42px;
+        align-items: flex-start;
+    }
+
+    .leftSide .welcome {
+        font-size: 1.3rem;
+    }
+
+    .leftSide .myName {
+        font-size: 2.5rem;
+    }
+
+    .leftSide .intro {
+        font-size: 1.2rem;
+    }
+
+    .leftSide .content {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .leftSide .buttons {
+        display: flex;
+    }
+
+    .leftSide .buttons #resumebtn {
+        padding: 0.1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+} 
