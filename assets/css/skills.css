@@ -155,7 +155,7 @@
 
 @media (max-width: 992px) { 
     #skills{
-        height: 180vh;
+        height: 100%;
     }
     .skills_title{
         padding-top: 50px;
