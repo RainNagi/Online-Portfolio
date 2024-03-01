@@ -1,8 +1,6 @@
-@import url("styles.css");
-
 #about {
-    height: 100hv;
-    background-image: url(../images/AboutBg.png);
+    height: 100vh;
+    background-image: url(../images/aboutBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
